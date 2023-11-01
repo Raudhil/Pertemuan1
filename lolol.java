@@ -1,5 +1,9 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class lolol{
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
         
         int [] a = new int [3];
 
@@ -16,9 +20,13 @@ public class lolol{
         }
 
         System.out.println(" ");
-        
+
         for(int i = 0; i < a.length; i++){
             System.out.println(a[i]);
         }
+
+        FileOutputStream file1 = new FileOutputStream("input.txt");
+        FileInputStream file = new FileInputStream("input.txt");
+    
     }
 }
