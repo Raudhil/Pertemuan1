@@ -10,5 +10,15 @@ public class lolol{
         for(int i = 0; i < a.length; i++){
             System.out.println(a[i]);
         }
+
+        for(int j = 0; j < a.length; j++){
+            a[j] = j + 4;
+        }
+
+        System.out.println(" ");
+        
+        for(int i = 0; i < a.length; i++){
+            System.out.println(a[i]);
+        }
     }
 }
